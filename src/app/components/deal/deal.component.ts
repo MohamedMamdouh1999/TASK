@@ -17,4 +17,7 @@ export class DealComponent {
       error: error => console.log(error)
     })
   }
+  trackDealBy(index:number, deal:Deals):number {
+    return deal.id
+  }
 }
