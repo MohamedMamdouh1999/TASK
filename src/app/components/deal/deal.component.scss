@@ -1,0 +1,27 @@
+.deal-body {
+  font-size: 14px;
+  i {
+    font-size: 12px;
+  }
+  .state {
+    background-color: var(--bg-state);
+  }
+  .probabilityStatus {
+    background-color: var(--bg-probabilityStatus);
+  }
+  .progressbar {
+    height: 7px !important;
+  }
+  &.ready {
+    $green-color: hsl(123.79deg 37.25% 50%);
+    background-color: hsl(126deg 50% 96.08%) !important;
+    color: $green-color;
+    h6 {
+      color: $green-color;
+    }
+    .state {
+      color: $green-color !important;
+      background-color: white;
+    }
+  }
+}

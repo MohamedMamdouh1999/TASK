@@ -1,0 +1,21 @@
+<div class="deal" *ngFor="let deal of deals">
+  <ng-container *ngIf="deal.status === type">
+    <div class="deal-body bg-white p-2 rounded-1 my-1 border" [ngClass]="{'ready': deal.probability_status >= '90%'}">
+      <div class="d-flex align-items-center justify-content-between">
+        <h6 class="card-title">{{deal.company}}</h6>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+      <div class="my-1">
+        <span class="text-white state rounded-2 px-1">{{deal.state}}</span>
+        <span *ngIf="type !== 'Getting Ready'" class="text-white probabilityStatus rounded-2 px-1 ms-1"
+        [title]="'Probability Statusdeal '+deal.probability_status">{{deal.probability_status}}</span>
+      </div>
+      <div class="ps-3">{{deal.first_name}} {{deal.last_name}}</div>
+      <div class="my-1"><i class="fa-solid fa-phone"></i> {{deal.phone}}</div>
+      <div><i class="fa-regular fa-calendar pe-2"></i>{{deal.date}}</div>
+      <div class="mt-1" *ngIf="type === 'Getting Ready'">
+        <progressbar type="success" class="progressbar" [value]="+deal.probability_status.split('%').join('')"></progressbar>
+      </div>
+    </div>
+  </ng-container>
+</div>

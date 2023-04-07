@@ -1,0 +1,27 @@
+.navbar-nav li.border-start {
+  &:first-of-type {
+    border-color: hsl(340.1deg 79.42% 52.35%) !important;
+  }
+  &:nth-of-type(2) {
+    border-color: hsl(260.94deg 43.8% 52.55%) !important;
+  }
+  &:nth-of-type(3) {
+    border-color: hsl(206.94deg 86.73% 55.69%) !important;
+  }
+  &:nth-of-type(4) {
+    border-color: hsl(123.83deg 37.01% 50.2%) !important;
+  }
+  &:nth-of-type(5) {
+    border-color: hsl(11.94deg 97.1% 59.41%) !important;
+  }
+}
+.dropdown-menu {
+  left: -200%;
+  li a {
+    cursor: pointer;
+    color: var(--main-color);
+    &:hover {
+      color: var(--second-color);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+:root {
+  --main-color: hsl(212.14deg 13.33% 58.82%);
+  --second-color: hsl(228.57deg 61.76% 40%);
+  --bg-color: hsl(216deg 33.33% 97.06%);
+  --bg-state: hsl(211.11deg 15.79% 66.47%);
+  --bg-probabilityStatus: hsl(212.91deg 75.76% 54.71%);
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--main-color);
+}
+p {
+  margin-bottom: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  color: black;
+  margin: 0;
+}

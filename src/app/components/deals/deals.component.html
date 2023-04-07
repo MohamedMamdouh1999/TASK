@@ -1,0 +1,68 @@
+<section class="py-3">
+  <div class="row g-2">
+    <div class="col-lg-2 col-md-2 col-12 text-md-start text-center">
+      <h2 class="text-black">Deals</h2>
+    </div>
+    <div class="col-lg-8 col-md-10 col-12">
+      <div class="d-flex flex-wrap flex-md-nowrap justify-content-center align-items-center">
+        <select class="form-select text-secondary form-select shadow-none" name="Segment">
+          <option hidden>All: Segment</option>
+          <option value="Segment A">Segment A (21)</option>
+          <option value="Segment B">Segment B (7)</option>
+          <option value="Segment C">Segment C (14)</option>
+        </select>
+        <select class="form-select text-secondary form-select shadow-none my-2 my-md-0 mx-md-2" name="Assignee">
+          <option hidden>All: Assignee</option>
+          <option value="Potential Value">Potential Value</option>
+          <option value="Focus">Focus</option>
+          <option value="Contact Made">Contact Made</option>
+          <option value="Offer Sent">Offer Sent</option>
+          <option value="Getting Ready">Getting Ready</option>
+        </select>
+        <select class="form-select text-secondary form-select shadow-none" name="Status">
+          <option hidden>All: Status</option>
+          <option value="Returning">Returning</option>
+          <option value="New">New</option>
+        </select>
+        <input class="form-control text-secondary ms-md-2 mt-2 mt-md-0 shadow-none" type="search" placeholder="Search by name or flag">
+      </div>
+    </div>
+    <div class="col-lg-2 col-12 d-flex justify-content-lg-end justify-content-center align-items-center">
+      <button type="button" class="btn rounded-1 text-white"><i class="fa-solid fa-circle-plus"></i> ADD DEAL</button>
+    </div>
+  </div>
+</section>
+<section class="pb-5">
+  <div class="row gy-3">
+    <div class="col-xl-3 col-lg-4 col-md-6 px-md-1">
+      <div class=" item rounded-2 pb-1 pt-2 px-1">
+        <h5 class="pb-2 ps-1">Potential Value</h5>
+        <app-deal [type]="'Potential Value'"></app-deal>
+      </div>
+    </div>
+    <div class="col-xl-2 col-lg-4 col-md-6 px-md-1">
+      <div class=" item rounded-2 pb-1 pt-2 px-1">
+        <h5 class="pb-2 ps-1">Focus</h5>
+        <app-deal [type]="'Focus'"></app-deal>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 px-md-1">
+      <div class=" item rounded-2 pb-1 pt-2 px-1">
+        <h5 class="pb-2 ps-1">Contact Made</h5>
+        <app-deal [type]="'Contact Made'"></app-deal>
+      </div>
+    </div>
+    <div class="col-xl-2 col-lg-4 col-md-6 px-md-1">
+      <div class=" item rounded-2 pb-1 pt-2 px-1">
+        <h5 class="pb-2 ps-1">Offer Sent</h5>
+        <app-deal [type]="'Offer Sent'"></app-deal>
+      </div>
+    </div>
+    <div class="col-xl-2 col-lg-4 col-md-6 px-md-1">
+      <div class=" item rounded-2 pb-1 pt-2 px-1">
+        <h5 class="pb-2 ps-1">Getting Ready</h5>
+        <app-deal [type]="'Getting Ready'"></app-deal>
+      </div>
+    </div>
+  </div>
+</section>

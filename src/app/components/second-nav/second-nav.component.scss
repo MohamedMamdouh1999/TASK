@@ -1,0 +1,15 @@
+nav {
+  ul li {
+    cursor: pointer;
+    transition: color .4s;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+    -ms-transition: color .4s;
+    -o-transition: color .4s;
+    &:nth-of-type(2),&:hover {
+      padding-bottom: 14px !important;
+      color: var(--second-color);
+      border-bottom: 2px solid var(--second-color);
+    }
+  }
+}
